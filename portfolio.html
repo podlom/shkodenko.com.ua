@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Портфоліо | Web-програмування та розробка сайтів, Київ</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="stylesheet" type="text/css" href="assets/js/jquery.fancybox.css?v=2.1.5" media="screen" />
+		<style>
+			.image {
+				padding: 0 5px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Головна</a></h1>
+				<a href="#nav">Меню</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Головна</a></li>
+					<li><a href="tech.html">Технології</a></li>
+					<li><a href="portfolio.html">Портфоліо</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Портфоліо</h2>
+						<p>На цій сторінці ви знайдете список сайтів (Портфоліо) в розробці яких я приймав безспосередню участь</p>
+					</header>
+
+					<section>
+						<div class="row">
+							<div class="image-grid">
+								<a class="fancybox-effects-b image" href="images/photo-designimpression.com.png" title="Створення теми та необхідного функціонала для сайта-Портфоліо фото художниці Ольги Домбровскої"><img src="images/photo-designimpression.com.png" alt="Создание темы и необходимого функционала для сайта-Портфоліо фото художницы Ольги Домбровской" /></a>
+								<a class="fancybox-effects-b image" href="images/shoko.com.ua-about.png" title="Створення та підтримка сайту для мережі кав`ярень Шоколадниця Україна за прикладом дизайну сайту shoko.ru"><img src="images/shoko.com.ua-about.png" alt="Создание и поддержка сайта для сети кофеен Шоколадница Украина по примеру дизайна shoko.ru" /></a>
+								<a class="fancybox-effects-b image" href="images/i-cases.com.ua.png" title="Створеня інтернет-магазину на основі системи Magento, встановлення та адаптація теми"><img src="images/i-cases.com.ua.png" alt="Создание интернет-магазина на основе системы Magento, установка и адаптация темы" /></a>
+								<a class="fancybox-effects-b image" href="images/britishskylines.com.ua.png" title="Перенос контенту сайту курсів англійської мови British Skylines із самописного на Wordpress CMS"><img src="images/britishskylines.com.ua.png" alt="Перенос содержимого сайта курсов английского языка British Skylines с самописного движка на Wordpress CMS" /></a>
+							</div>
+						</div>
+					</section>
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.github.com/podlom" class="icon fa-github">
+						<span class="label">Github</span>
+					</a></li>
+					<li><a href="https://www.facebook.com/taras.shkodenko" class="icon fa-facebook">
+						<span class="label">Facebook</span>
+					</a></li>
+					<li><a href="https://twitter.com/podlom" class="icon fa-twitter">
+						<span class="label">Twitter</span>
+					</a></li>
+					<li><a href="https://www.instagram.com/sh_taras/" class="icon fa-instagram">
+						<span class="label">Instagram</span>
+					</a></li>
+					<li><a href="https://www.linkedin.com/in/taras-shkodenko" class="icon fa-linkedin">
+						<span class="label">LinkedIn</span>
+					</a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2016 - <span id="jsCurrYear">2018</span> Шкоденко Тарас.</li>
+				</ul>
+			</div>
+		</footer>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.mousewheel.pack.js?v=3.1.3"></script>
+<script src="assets/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox-effects-b").fancybox({
+			openEffect  : 'none',
+			closeEffect	: 'none',
+
+			helpers : {
+				title : {
+					type : 'over'
+				}
+			}
+		});
+
+        var cY = $("#jsCurrYear").text();
+        var cT = new Date();
+        var dT = cT.getFullYear();
+        if (cY !== dT) {
+            $("#jsCurrYear").text(dT);
+        }
+	});
+</script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-91152510-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+	</body>
+</html>
