@@ -6,7 +6,15 @@
 		<script>
 			function onSubmit(token) {
 				console.log('+8 onSubmit token: ', token);
+				$('#_token').val(token);
+
 				// document.getElementById("contactForm1").submit();
+
+				$.post('contact.php', $('#contactForm1').serialize(), function (json) {
+					if (json.res) {
+						$('#askText').text('Дякуємо, ваше повідомлення було відправлено');
+					}
+				}, 'json');
 			}
 		</script>
 		<meta charset="utf-8" />
@@ -139,6 +147,7 @@
 							<li><input type="submit" class="special g-recaptcha" data-sitekey="6LeqNXwfAAAAALSWkq7Gim9h7LllW80cOTiTpBCt" data-callback='onSubmit' value="Відправити" /></li>
 							<li><input type="reset" class="alt" value="Зкинути" /></li>
 						</ul>
+						<input id="_token" name="token" type="hidden" value="" />
 					</form>
 				</div>
 			</section>
@@ -201,7 +210,7 @@
 	});
 
 	$('#contactForm1').submit(function(evt){
-		console.log('+204 #contactForm1 form submit');
+		console.log('+204 old #contactForm1 form submit handler');
 	    $.post('contact.php', $('#contactForm1').serialize(), function (json) {
 	            if (json.res) {
 	                $('#askText').text('Дякуємо, ваше повідомлення було відправлено');
