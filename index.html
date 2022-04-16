@@ -6,8 +6,7 @@
 		<script>
 			function onSubmit(token) {
 				console.log('+8 onSubmit token: ', token);
-				$('#_token').val(token);
-
+				// $('#_token').val(token);
 				// document.getElementById("contactForm1").submit();
 
 				$.post('contact.php', $('#contactForm1').serialize(), function (json) {
@@ -147,7 +146,8 @@
 							<li><input type="submit" class="special g-recaptcha" data-sitekey="6LeqNXwfAAAAALSWkq7Gim9h7LllW80cOTiTpBCt" data-callback='onSubmit' value="Відправити" /></li>
 							<li><input type="reset" class="alt" value="Зкинути" /></li>
 						</ul>
-						<input id="_token" name="token" type="hidden" value="" />
+						<!-- input id="_token" name="token" type="hidden" value="" / -->
+
 					</form>
 				</div>
 			</section>
