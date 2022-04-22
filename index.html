@@ -6,12 +6,10 @@
 		<script>
 			function onSubmit(token) {
 				console.log('+8 onSubmit token: ', token);
-				// $('#_token').val(token);
-				// document.getElementById("contactForm1").submit();
 
 				$.post('contact.php', $('#contactForm1').serialize(), function (json) {
 					if (json.res) {
-						$('#askText').text('Дякуємо, ваше повідомлення було відправлено');
+						$('#askText').html('<strong>Дякуємо, ваше повідомлення було відправлено.</strong>');
 					}
 				}, 'json');
 			}
