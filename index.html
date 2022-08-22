@@ -20,6 +20,9 @@
 				$.post('contact.php', $('#contactForm1').serialize(), function (json) {
 					if (json.res) {
 						$('#askText').html('<strong>Дякуємо, ваше повідомлення було відправлено.</strong>');
+
+						let areas = $("textarea");
+						console.log('+25 areas: ', areas);
 					}
 				}, 'json');
 			}
@@ -239,10 +242,6 @@
 	            if (json.res) {
 	                $('#askText').text('Дякуємо, ваше повідомлення було відправлено');
 
-					$('#contactForm1').each(function() {
-						let areas = $("textarea", this);
-						console.log('+244 areas: ', areas);
-					});
                 }
             }, 'json');
 
