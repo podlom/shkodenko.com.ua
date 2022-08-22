@@ -22,7 +22,10 @@
 						$('#askText').html('<strong>Дякуємо, ваше повідомлення було відправлено.</strong>');
 
 						let areas = $("textarea");
-						console.log('+25 areas: ', areas);
+						if (areas.length) {
+							$(areas[0]).val('');
+							console.log('+26 empty textarea message text after submit');
+						}
 					}
 				}, 'json');
 			}
