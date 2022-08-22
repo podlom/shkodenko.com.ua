@@ -1,1 +1,5 @@
+# phpStorm IDE config folder
 .idea/*
+
+# removed log/*.txt from index
+log/*.txt
