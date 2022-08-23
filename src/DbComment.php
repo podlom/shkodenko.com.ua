@@ -9,7 +9,7 @@ class DbComment
 
     public function __construct()
     {
-        $this->dbConnection = new \PDO('mysql:host=localhost;dbname=***REMOVED***',
+        $this->dbConnection = new \PDO('mysql:host=localhost;dbname=***REMOVED***;charset=utf8;',
             '***REMOVED***',
             '***REMOVED***'
         );
