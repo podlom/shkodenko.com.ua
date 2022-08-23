@@ -18,12 +18,21 @@ class DbComment
     public function addComment($data)
     {
         try {
-            $stmt = $this->dbConnection->prepare("INSERT INTO `comments` SET `name` = ?, `email` = ?, `author_IP` = ?, `comment_text` = ?, `comment_approved` = ?");
-            $res = $stmt->execute($data);
-            echo var_export(__METHOD__ . ' +' . __LINE__ . ' $res: ' . var_export($res, true));
+            $sql = "INSERT INTO `comments` SET `name` = ?, `email` = ?, `author_IP` = ?, `comment_text` = ?, `comment_approved` = ?";
+            $stmt = $this->dbConnection->prepare($sql);
+            $res = $stmt->execute([
+                $data['name'],
+                $data['email'],
+                $data['author_IP'],
+                $data['comment_text'],
+                $data['comment_approved'],
+            ]);
+
+            return $res;
         } catch (\PDOException $e) {
             print "Error!: " . $e->getMessage() . "<br/>";
-            die();
+
+            return false;
         }
     }
 }
