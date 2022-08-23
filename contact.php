@@ -37,6 +37,18 @@ if (!empty($_POST)) {
             } else {
                 error_log($msg);
             }
+
+            require_once 'src/DbComment.php';
+
+            $dbComments = new ShkodenkoComUa\App\DbComment();
+            $dbComments->addComment([
+                'name' => $_POST['name'],
+                'email' => $_POST['email'],
+                'author_IP' => $_SERVER['REMOTE_ADDR'],
+                'comment_text' => $_POST['message'],
+                'comment_approved' => 0,
+            ]);
+
         } else {
             // TODO: SPAM
         }
