@@ -256,6 +256,7 @@
 	    $.post('contact.php', $('#contactForm1').serialize(), function (json) {
 	            if (json.res) {
 	                $('#askText').text('Дякуємо, ваше повідомлення було відправлено');
+					document.getElementById("askText").scrollIntoView();
 
                 }
             }, 'json');
