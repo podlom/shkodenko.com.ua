@@ -3,3 +3,10 @@
 
 # removed log/*.txt from index
 log/*.txt
+
+# ignore .env file
+.env
+
+# ignore composer.lock and vendor
+composer.lock
+/vendor/
