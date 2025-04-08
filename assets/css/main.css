@@ -4226,3 +4226,12 @@
 			}
 
 		}
+
+		@media screen and (max-width: 480px) {
+    .button.big.special {
+        font-size: 10px !important;
+				padding: 8px 25px !important;
+				text-align: center !important;
+				height: auto !important;
+    }
+}
