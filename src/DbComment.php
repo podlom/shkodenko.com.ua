@@ -1,7 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
+/**
+ * @author Taras Shkodenko <podlom@gmail.com>
+ * @copyright Shkodenko V. Taras 2025
+ */
+
 namespace ShkodenkoComUa\App;
 
+
+use Dotenv\Dotenv;
 
 class DbComment
 {
@@ -9,9 +18,18 @@ class DbComment
 
     public function __construct()
     {
-        $this->dbConnection = new \PDO('mysql:host=localhost;dbname=***REMOVED***;charset=utf8;',
-            '***REMOVED***',
-            '***REMOVED***'
+        $dotenv = Dotenv::createImmutable(dirname(__DIR__));
+        $dotenv->load();
+
+        $dbHost = $_ENV['DB_HOST'];
+        $dbName = $_ENV['DB_NAME'];
+        $dbUser = $_ENV['DB_USER'];
+        $dbPass = $_ENV['DB_PASS'];
+        $dbCharset = $_ENV['DB_CHARSET'] ?? 'utf8';
+
+        $this->dbConnection = new \PDO('mysql:host=' . $dbHost . ';dbname=' . $dbName . ';charset=' . $dbCharset . ';',
+            $dbUser,
+            $dbPass
         );
     }
 
