@@ -4226,3 +4226,16 @@
 			}
 
 		}
+
+		.button.big.special {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: inline-block;
+			text-align: center;
+			max-width: 100%;
+			box-sizing: border-box;
+			padding: 1em 1.5em;
+			font-size: 1em;
+			line-height: 1.4em;
+		}
