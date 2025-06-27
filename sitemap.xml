@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://shkodenko.com.ua/index.html</loc>
+        <loc>https://myplan.com.ua/index.html</loc>
     </url>
     <url>
-        <loc>https://shkodenko.com.ua/tech.html</loc>
+        <loc>https://myplan.com.ua/tech.html</loc>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/certificate/PNCW8DXFMGZB14L.svg</image:loc>
+            <image:loc>https://myplan.com.ua/images/certificate/PNCW8DXFMGZB14L.svg</image:loc>
             <image:caption><![CDATA[Taras Shkodenko Pimcore CMS Certified Junior Developer]]></image:caption>
             <image:title><![CDATA[Taras Shkodenko Pimcore CMS Certified Junior Developer]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/certificate/6L2UYSRE9W8MC7J.svg</image:loc>
+            <image:loc>https://myplan.com.ua/images/certificate/6L2UYSRE9W8MC7J.svg</image:loc>
             <image:caption><![CDATA[Taras Shkodenko Pimcore CMS Developer Senior Certificate]]></image:caption>
             <image:title><![CDATA[Taras Shkodenko Pimcore CMS Developer Senior Certificate]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/certificate/6187JAWZ3DMFHKL.svg</image:loc>
+            <image:loc>https://myplan.com.ua/images/certificate/6187JAWZ3DMFHKL.svg</image:loc>
             <image:caption><![CDATA[Taras Shkodenko Pimcore CMS Certified Enterprise Developer]]></image:caption>
             <image:title><![CDATA[Taras Shkodenko Pimcore CMS Certified Enterprise Developer]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/certificate/V4FJXUGNZLH8Q1E.svg</image:loc>
+            <image:loc>https://myplan.com.ua/images/certificate/V4FJXUGNZLH8Q1E.svg</image:loc>
             <image:caption><![CDATA[Taras Shkodenko Pimcore CMS Certified Pimcore Consultant]]></image:caption>
             <image:title><![CDATA[Taras Shkodenko Pimcore CMS Certified Pimcore Consultant]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/certificate/TP62732324-front.jpeg</image:loc>
+            <image:loc>https://myplan.com.ua/images/certificate/TP62732324-front.jpeg</image:loc>
             <image:caption><![CDATA[Taras Shkodenko ITVDN: VUE.js Essential Certificate]]></image:caption>
             <image:title><![CDATA[Taras Shkodenko ITVDN: VUE.js Essential Certificate]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/certificate/TP85878355-front.jpeg</image:loc>
+            <image:loc>https://myplan.com.ua/images/certificate/TP85878355-front.jpeg</image:loc>
             <image:caption><![CDATA[Taras Shkodenko ITVDN: Yii2 Advanced Certificate]]></image:caption>
             <image:title><![CDATA[Taras Shkodenko ITVDN: Yii2 Advanced Certificate]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/certificate/TP54274754-front.jpeg</image:loc>
+            <image:loc>https://myplan.com.ua/images/certificate/TP54274754-front.jpeg</image:loc>
             <image:caption><![CDATA[Taras Shkodenko ITVDN: PHP Symfony Web Development Certificate]]></image:caption>
             <image:title><![CDATA[Taras Shkodenko ITVDN: PHP Symfony Web Development Certificate]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/certificate/pimcore-senior-2022-07-31_13-41.png</image:loc>
+            <image:loc>https://myplan.com.ua/images/certificate/pimcore-senior-2022-07-31_13-41.png</image:loc>
             <image:caption><![CDATA[Taras Shkodenko Pimcore CMS Developer Senior Certificate]]></image:caption>
             <image:title><![CDATA[Taras Shkodenko Pimcore CMS Developer Senior Certificate]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/certificate/pimcore-junior-2022-07-31_13-41.png</image:loc>
+            <image:loc>https://myplan.com.ua/images/certificate/pimcore-junior-2022-07-31_13-41.png</image:loc>
             <image:caption><![CDATA[Taras Shkodenko Pimcore Developer Junior Certificate]]></image:caption>
             <image:title><![CDATA[Taras Shkodenko Pimcore Developer Junior Certificate]]></image:title>
         </image:image>
     </url>
     <url>
-        <loc>https://shkodenko.com.ua/portfolio.html</loc>
+        <loc>https://myplan.com.ua/portfolio.html</loc>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/_inventure_2021-06-13_15-24.png</image:loc>
+            <image:loc>https://myplan.com.ua/images/_inventure_2021-06-13_15-24.png</image:loc>
             <image:caption><![CDATA[Портфоліо | Розробка та підтримка порталу по інвестуванню InVenture.com.ua]]></image:caption>
             <image:title><![CDATA[Портфоліо | Розробка та підтримка порталу по інвестуванню InVenture.com.ua]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/shoko.com.ua-about.png</image:loc>
+            <image:loc>https://myplan.com.ua/images/shoko.com.ua-about.png</image:loc>
             <image:caption><![CDATA[Портфоліо | Розробка та підтримка сайту для мережі кав`ярень Шоколадниця Україна]]></image:caption>
             <image:title><![CDATA[Портфоліо | Розробка та підтримка сайту для мережі кав`ярень Шоколадниця Україна]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/i-cases.com.ua.png</image:loc>
+            <image:loc>https://myplan.com.ua/images/i-cases.com.ua.png</image:loc>
             <image:caption><![CDATA[Портфоліо | Створеня інтернет-магазину на основі системи Magento, встановлення та адаптація теми]]></image:caption>
             <image:title><![CDATA[Портфоліо | Створеня інтернет-магазину на основі системи Magento, встановлення та адаптація теми]]></image:title>
         </image:image>
         <image:image>
-            <image:loc>https://shkodenko.com.ua/images/britishskylines.com.ua.png</image:loc>
+            <image:loc>https://myplan.com.ua/images/britishskylines.com.ua.png</image:loc>
             <image:caption><![CDATA[Портфоліо | Міграція та перенос контенту сайту курсів англійської мови British Skylines із самописного на Wordpress CMS]]></image:caption>
             <image:title><![CDATA[Портфоліо | Міграція та перенос контенту сайту курсів англійської мови British Skylines із самописного на Wordpress CMS]]></image:title>
         </image:image>
     </url>
     <url>
-        <loc>https://blog.shkodenko.com.ua/</loc>
+        <loc>https://blog.myplan.com.ua/</loc>
     </url>
 </urlset>
