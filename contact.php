@@ -24,20 +24,23 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-$googleReCaptchaSecretKey = $_ENV['GOOGLE_RECAPTCHA_SECRET'];
+// $googleReCaptchaSecretKey = $_ENV['GOOGLE_RECAPTCHA_SECRET'];
+$cloudflareSecretKey = $_ENV['CLOUDFLARE_SECRET'];
 
-if (empty($googleReCaptchaSecretKey)) {
+if (empty($cloudflareSecretKey)) {
     header("Content-type: application/json");
-    echo json_encode(['res' => false, 'msg' => 'Error: add GOOGLE_RECAPTCHA_SECRET to your .env config file']);
+    echo json_encode(['res' => false, 'msg' => 'Error: add CLOUDFLARE_SECRET to your .env config file']);
 }
 
 $mailRes = false;
+error_log(__FILE__ . ' +' . __LINE__ . ' _POST: ' . var_export($_POST, true));
 if (!empty($_POST)) {
     if (isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
         // @see: https://developers.google.com/recaptcha/docs/verify
+        // @see: https://developers.cloudflare.com/turnstile/migration/recaptcha/
         $postdata = http_build_query(
             [
-                'secret' => $googleReCaptchaSecretKey,
+                'secret' => $cloudflareSecretKey,
                 'response' => $_POST['g-recaptcha-response'],
                 // 'remoteip' => 'Optional. The user's IP address.',
             ]
@@ -51,7 +54,8 @@ if (!empty($_POST)) {
                 ],
         ];
         $context = stream_context_create($opts);
-        $result = file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $context);
+        // $result = file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $context);
+        $result = file_get_contents('https://challenges.cloudflare.com/turnstile/v0/siteverify', false, $context);
         //
         if ($result) {
             $msg = date('r') . ' $_POST data: ' . var_export($_POST, true) . PHP_EOL . ' $_SERVER: ' . var_export($_SERVER, true) . PHP_EOL;
